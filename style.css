@@ -1,0 +1,100 @@
+body {
+  text-align: center;
+}
+
+#board-container {
+  background-color: gray;
+  display: inline-block;
+  padding: 1%;
+}
+
+.row {
+  display: flex;
+}
+
+/* CELLS */
+.cell {
+  display: inline-block;
+  width: 8vw;
+  height: 8vw;
+  max-width: 10vh;
+  max-height: 10vh;
+}
+
+.black-cell {
+  background-color: black;
+}
+
+
+.red-cell {
+  background-color: red;
+}
+
+.selected {
+  background-color: yellow;
+}
+
+
+/* Checker wrapper */
+/* .checker-wrapper {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+} */
+
+/* Checkers */
+.checker {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+}
+
+.red-checker {
+  background-color: red;
+}
+
+.red-checker.king{
+  background-color: hotpink;
+}
+
+.black-checker {
+  background-color: rgb(216, 216, 216);
+}
+
+.black-checker.king {
+  background-color: steelblue;
+}
+
+.marker {
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+  margin: 30%;
+  background-color: yellow;
+}
+
+/* out of play */
+#turn-div {
+  display: flex;
+  justify-content: center;
+}
+
+.turn-indicator {
+  font-family:'Lucida Sans';
+  font-size: xx-large;
+  color: black;
+  cursor: grab;
+}
+
+span[myturn='false'] {
+  color: rgba(127,127,127,0.3)
+}
+
+#red-turn[myturn='true'] {
+  color: red;
+}
+
+#black-turn[myturn='true'] {
+  color: black;
+}
